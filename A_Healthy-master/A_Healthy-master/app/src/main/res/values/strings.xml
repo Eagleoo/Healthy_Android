@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">iHealthy</string>
+    <string name="health">健康</string>
+    <string name="resource">搜   索</string>
+    <string name="consult">搜索资讯推荐、动态</string>
+    <string name="login">点击登录</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="personal">个人信息</string>
+    <string name="order">全部订单</string>
+    <string name="update">待付款</string>
+    <string name="collection">个人收藏</string>
+    <string name="receive">待收货</string>
+    <string name="username">用户名：</string>
+    <string name="sex">性别：</string>
+    <string name="weight">体重：</string>
+    <string name="age">年龄：</string>
+    <string name="height">身高：</string>
+    <string name="address">地址：</string>
+    <string name="updatemsg">修改个人信息</string>
+    <string name="exit">返回主页</string>
+    <string name="registe">注册</string>
+    <string name="inp_password">请输入密码</string>
+    <string name="password">密     码：</string>
+    <string name="inp_user">请输入账号</string>
+    <string name="sure">确定</string>
+    <string name="qq">QQ登录</string>
+    <string name="setting">设置</string>
+    <string name="updatepwd">修改登录密码</string>
+    <string name="theaddress">我的收货地址</string>
+    <string name="about">关于</string>
+    <string name="costpwd">返回</string>
+    <string name="back">返回</string>
+    <string name="title_activity_goods">AddressActivity</string>
+    <string name="insertaddress">新增收货地址</string>
+    <string name="goodsper">收货人：</string>
+    <string name="name">请输入收货人姓名</string>
+    <string name="tel">联系电话：</string>
+    <string name="telper">请输入联系电话</string>
+    <string name="tract">所在地区：</string>
+    <string name="save">保存</string>
+    <string name="cost">支付密码：</string>
+
+    <string name="inp_ensure">确认密码</string>
+    <string name="oldpwd">旧密码：</string>
+    <string name="newpwd">新密码：</string>
+    <string name="inp_newpwd">请输入新密码</string>
+    <string name="news1">"    "今日必读------>步行对机体健康有哪些好处？点击这里快来了解一下吧！</string>
+    <string name="news2">"    "国家发改委宣布，医疗保险将降低十个保护点。老年人将何去何从？</string>
+    <string name="news3">"    "减肥饮食核心：这三类食物必须吃！</string>
+    <string name="text1">"    "测测你的生活为什么这么累？</string>
+    <string name="text2">"    "女性健康疾病自测</string>
+    <string name="text3">"    "烟瘾小测试，你是大烟枪吗？</string>
+    <string name="title_activity_qqbaidu_register">QQBaiduRegister</string>
+    <string name="received">确认收货</string>
+    <string name="distribution">查看物流</string>
+    <string name="review">查看评论</string>
+    <string name="startup">     若不设置自启动记录的步数可能不准确，这都是因为各大手机厂商对后台用电的限制，请确保自启动和用电无限制的开启！</string>
+    <string name="speed_about">一天内多次跑步的情况，平均速度按最高的那个时段计算，距离、时间和卡路里消耗为今天内跑步总和。</string>
+    <string name="drink_about">正常人每天平均耗水量为2000－2500毫升\n
+    体内物质氧化可生水300毫升\n
+    故每日应补充水分2200毫升\n
+    包括饮食中的含水量\n
+    夏天每日补充在3000毫升左右</string>
+    <string name="coffee_about">咖啡因量因每种饮料而异。请参考下表以查看常见饮料中的咖啡因含量。例如，一杯
+    普通咖啡含有80毫克的咖啡因。</string>
+    <string name="step_about">安卓机与计步器不得不说的事儿！\n\n
+T- T+\n\n
+为什么安卓手机锁屏不计步?\n\n
+Q：   为什么我的安卓手机计步数据不准？\n\n
+A：如果你的计步数据不准，可能是由于以下几种情况。\n\n
+情况1：后台无法“启动”iHealthy\n\n
+▍解决方案：允许iHealthyAPP开机自启动。\n\n
+小米用户打开【安全中心】APP，找到【授权管理】，进入【自启动管理】，找到iHealthy，开启开关；\n\n
+vivo用户可以打开【设置】-【软件管理】-【自启动管理】，设置允许iHealthy开机自启动；\n\n
+华为用户可以在手机【设置】中找到【开机自动启动】，进行设置；\n\n
+三星用户打开【设定】-【应用程序管理器】，在已下载列表点击iHealthy-勾选“自动运行”选项；\n\n
+其他安卓用户都可以在手机设置中找到开机自动启动的选项，点击允许自启动操作。\n\n
+情况2：进程被第三方手机管家谋杀\n\n
+手机管家（360卫士、百度卫士、LBE安全大师等）在清理加速时，会将非白名单内的应用进行彻底清理，导致iHealthy无法在后台运行，从而影响计步数据的准确性。\n\n
+▍解决方案：在手机管家的白名单设置里，添加iHealthy\n
+情况3：某些特殊情况\n\n
+存在某些特殊情况，例如小米手机在电量不足的时候，会在底层关闭加速度感应器，也会影响计步数据的准确性\n\n
+▍解决方案：保持手机电量充足。\n\n
+情况4：手机系统问题\n\n
+部分安卓系统也会导致一锁屏就关闭加速度感应器，从而影响计步数据的准确性\n\n
+▍解决方案：升级手机系统。\n\n
+情况5：手机不兼容情况  \n\n
+如果尝试了以上四种解决方案，还是无法解决锁屏不计步的问题，那么可能就是手机完全不具备计步功能。\n\n
+▍解决方案：下载屏幕常亮助手的软件，搭配使用。但是代价是你的屏幕会被持续点亮，耗电量巨大且可能导致发热等问题。所以如果真的想要正常使用计步功能，换一部新的手机吧。</string>
+
+</resources>

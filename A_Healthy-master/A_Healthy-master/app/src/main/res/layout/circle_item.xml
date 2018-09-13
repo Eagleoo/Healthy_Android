@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/circle1"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <ImageView
+            android:id="@+id/circle_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/default_pic"/>
+        <TextView
+            android:id="@+id/dynamicname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/circle_img"
+            android:text="科比布莱恩特"
+            android:layout_marginLeft="10dp"
+            android:textColor="#2894FF"/>
+        <TextView
+            android:id="@+id/curtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6-20  02:10"
+            android:layout_below="@+id/dynamicname"
+            android:layout_toRightOf="@+id/circle_img"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/describle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+        <com.example.administrator.steps_count.tools.ScaleImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/location_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/location_img"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/dynamicLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成都市武侯区玉林南街4号院"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <CheckBox
+            android:id="@+id/like1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:layout_marginRight="5dp"
+            android:focusable="false"/>
+        <TextView
+            android:id="@+id/like_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/review"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/review_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+
+
+</LinearLayout>

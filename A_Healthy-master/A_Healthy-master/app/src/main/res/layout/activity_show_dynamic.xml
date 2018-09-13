@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edt_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_shap"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/review_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:background="@drawable/btn_text_result"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/show_circle_img"
+                    app:riv_corner_radius="30dip"
+                    app:riv_border_color="#333333"
+                    app:riv_mutate_background="true"
+                    app:riv_tile_mode="repeat"
+                    app:riv_oval="true"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/show_dynamicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/show_circle_img"
+                    android:text="科比布莱恩特"
+                    android:textColor="#2894FF" />
+
+                <TextView
+                    android:id="@+id/show_curtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="6-20  02:10" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/show_describle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:text="今日完成目标5000步啦，速度围观！！" />
+
+            <ImageView
+                android:id="@+id/show_img_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp">
+
+                <CheckBox
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    android:layout_marginRight="5dp"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:id="@+id/show_like_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/review" />
+
+                <TextView
+                    android:id="@+id/show_review_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="最新评论" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="#BEBEBE">
+
+            </LinearLayout>
+
+            <com.example.administrator.steps_count.Main_Activity.ListViewForScrollView
+                android:id="@+id/review_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.example.administrator.steps_count.Main_Activity.ListViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

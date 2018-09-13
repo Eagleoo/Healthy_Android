@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/addManager_refreshlayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:src="@drawable/loading" />
+    <ListView
+        android:id="@+id/mall_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_address"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true">
+    </ListView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <Button
+        android:id="@+id/new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_shap"
+        android:text="新增收货地址"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+</RelativeLayout>

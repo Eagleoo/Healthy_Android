@@ -1,0 +1,356 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#2480C4"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/setting1"
+        android:src="@drawable/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置锻炼计划"
+        android:layout_toRightOf="@+id/setting1"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="3dp"/>
+
+    <ImageView
+        android:id="@+id/record1"
+        android:src="@drawable/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/record1"
+        android:text="历史记录"
+        android:textColor="#000000"
+        android:layout_marginTop="3dp"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="#E0E0E0"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting1"
+        android:layout_weight="1">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+        >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list1"
+        android:layout_centerHorizontal="true"
+        android:text="今日"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#000000"
+        android:paddingTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/step_about"
+        android:src="@drawable/wenhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/today"
+        android:layout_below="@+id/list1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/startup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list1"
+        android:layout_toRightOf="@+id/step_about"
+        android:text="去设置？"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#0080FF"/>
+
+    <TextView
+        android:id="@+id/finish_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list1"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="已完成步数"/>
+
+    <ImageView
+        android:id="@+id/left"
+        android:src="@drawable/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/progressView"
+        android:layout_marginTop="85dp"/>
+    <ImageView
+        android:id="@+id/right"
+        android:src="@drawable/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/progressView"
+        android:layout_marginTop="85dp"/>
+
+
+
+    <com.example.administrator.steps_count.step.ProgressView
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/list1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/aim"
+        android:text="目标4000步"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list1"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="5dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:paddingLeft="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/totalStepsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#5B5B5B" />
+
+        <TextView
+            android:id="@+id/total_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总步数"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="#7B7B7B" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/totalStepsKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#5B5B5B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离(km)"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#7B7B7B" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/totalStepsKa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#5B5B5B" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卡路里(ka)"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="#7B7B7B" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="10dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp">
+    <com.github.mikephil.charting.charts.LineChart
+
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/liner_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:id="@+id/btn_step"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_step_run"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健走"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:src="@drawable/walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随时随地，时刻开始"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_step_run"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_step"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="跑步"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/run" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="从零开始，跑起来"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

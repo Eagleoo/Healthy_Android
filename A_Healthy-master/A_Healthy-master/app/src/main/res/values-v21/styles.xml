@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0080FF</item>
+        <item name="colorPrimaryDark">#0080FF</item>
+        <item name="colorAccent">#0080FF</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- 沉浸式状态栏 -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">false</item>
+
+    </style>
+</resources>
